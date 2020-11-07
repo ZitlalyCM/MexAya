@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Post-Processing
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 3470812685
+    locked: 0
+  - name: GAME
+    uniqueID: 3335649875
+    locked: 0
+  - name: GUI
+    uniqueID: 1924219547
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
