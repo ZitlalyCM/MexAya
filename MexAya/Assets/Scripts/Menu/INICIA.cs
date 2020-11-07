@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class INICIA : MonoBehaviour {
-
+	public string musica;
 	// Use this for initialization
 	void Start () {
-		playSong("menuSong");
+		playSong(musica);
 		
 	}
 	
