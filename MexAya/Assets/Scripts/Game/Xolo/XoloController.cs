@@ -75,7 +75,7 @@ public class XoloController : MonoBehaviour
         if (timeToFinish < 0)
         {
             isMoving = true;
-            nuevaX = Random.Range(-7.0f, 7.0f);
+            nuevaX = Random.Range(-7.0f, 4.0f);
 
             startPos = transform.position;
             endPos = new Vector3(nuevaX, transform.position.y);

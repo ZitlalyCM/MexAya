@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0) * speed * Time.deltaTime;
             }
         }
+       // Debug.Log(transform.position.y);
     }
 
     void Jump()
