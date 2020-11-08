@@ -11,7 +11,7 @@ public class LevelController : MonoBehaviour
 	//public Character arian;
 	public bool playerEnable=true;
 	public bool muerto;
-	bool win=false;
+	public bool win=false;
     public string musica01;
 	string[] _script= new string[]{
 		"«¡¡Muy bien!!... frustraste el ataque sopresa enemigo»",
@@ -24,18 +24,33 @@ public class LevelController : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		playSong(musica01);
+		letrero.SetActive(false);
 		//arian = CharacterManager.instance.GetCharacter("Arian",enableOnStart:false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		if(final != -1){
-			if(Input.GetButtonDown("Fire1")){
-					SceneManager.LoadScene("Game");
+		//Debug.Log(muerto);
+		if (win)
+		{
+			playerEnable = false;
+			letrero.SetActive(true);
+			playSong("calm01");
+			if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Escape))
+			{
+				SceneManager.LoadScene("Game");
 			}
-            if(Input.GetKeyDown(KeyCode.Escape)){
-					SceneManager.LoadScene("Game");
+
+		}
+		if (muerto)
+        {
+			playerEnable = false;
+			letrero.GetComponent<TextMesh>().text = "No lograste cruzar";
+			letrero.SetActive(true);
+			playSong("action1");
+			if (Input.GetButtonDown("Fire1")||Input.GetButtonDown("Jump")|| Input.GetKeyDown(KeyCode.Escape))
+			{
+				SceneManager.LoadScene("Game");
 			}
 		}
 	}

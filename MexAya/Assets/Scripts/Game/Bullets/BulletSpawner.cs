@@ -17,7 +17,7 @@ public class BulletSpawner : MonoBehaviour
     void Start()
     {
         timer = GetSpawnData().cooldown;
-        Debug.Log(timer);
+        //Debug.Log(timer);
         rotations = new float[8];
     }
 

@@ -25,6 +25,7 @@ public class Timer : MonoBehaviour
         
         if(timeLeft < 0)
         {
+            LevelController.instance.win = true;
             //GANASTE YAAAY
         }
     }

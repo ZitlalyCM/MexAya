@@ -24,15 +24,19 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isMoving)
+        if (LevelController.instance.playerEnable)
         {
-            move();
+            if (isMoving)
+            {
+                move();
+            }
+            else
+            {
+                wait();
+            }
+            //Debug.Log(timeToFinish + "   time " + isMoving);
+
         }
-        else
-        {
-            wait();
-        }
-        //Debug.Log(timeToFinish + "   time " + isMoving);
 
     }
 
