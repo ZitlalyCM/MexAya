@@ -18,8 +18,8 @@ MonoBehaviour:
   maxRotation: 10
   numberOfBullets: 1
   isRandom: 1
-  cooldown: 1.1
-  bulletSpeed: 4
+  cooldown: 2
+  bulletSpeed: 5
   lifeTime: 6
   spiral: 0
   angle: 0
