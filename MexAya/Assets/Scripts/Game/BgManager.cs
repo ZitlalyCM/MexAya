@@ -14,7 +14,7 @@ public class BgManager : MonoBehaviour
     void Start()
     {
         startPos = new Vector3(0, 0);
-        Debug.Log(startPos);
+        //Debug.Log(startPos);
     }
 
     // Update is called once per frame

@@ -42,6 +42,12 @@ TagManager:
   - name: BG
     uniqueID: 3470812685
     locked: 0
+  - name: postProcessing
+    uniqueID: 2498406721
+    locked: 0
+  - name: NPC
+    uniqueID: 777086135
+    locked: 0
   - name: GAME
     uniqueID: 3335649875
     locked: 0
