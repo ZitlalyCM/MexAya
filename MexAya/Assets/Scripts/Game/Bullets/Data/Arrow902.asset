@@ -15,12 +15,12 @@ MonoBehaviour:
   bulletResource: {fileID: 3705868253284033832, guid: d9e694b3a23bd484a878a9e4ff4cef5b,
     type: 3}
   minRotation: 0
-  maxRotation: 90
-  numberOfBullets: 2
-  isRandom: 0
-  cooldown: 0.3
+  maxRotation: 10
+  numberOfBullets: 1
+  isRandom: 1
+  cooldown: 1
   bulletSpeed: 3
-  lifeTime: 4
+  lifeTime: 6
   spiral: 0
   angle: 0
-  bulletVelocity: {x: -1, y: -0.5}
+  bulletVelocity: {x: -1, y: 0}

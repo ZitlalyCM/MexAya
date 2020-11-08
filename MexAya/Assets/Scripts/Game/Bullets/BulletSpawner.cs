@@ -17,6 +17,7 @@ public class BulletSpawner : MonoBehaviour
     void Start()
     {
         timer = GetSpawnData().cooldown;
+        Debug.Log(timer);
         rotations = new float[8];
     }
 
@@ -38,6 +39,7 @@ public class BulletSpawner : MonoBehaviour
                 
             }
             timer -= Time.deltaTime;
+            
         }
         
     }
@@ -60,13 +62,16 @@ public class BulletSpawner : MonoBehaviour
     public float[] DistributedRotations()
     {
         for (int i = 0; i < GetSpawnData().numberOfBullets; i++)
-        {   
-            if(GetSpawnData().numberOfBullets >1){
+        {
+            
+            if (GetSpawnData().numberOfBullets >1){
                 var fraction = (float)i / ((float)GetSpawnData().numberOfBullets - 1);
                 var difference = GetSpawnData().maxRotation - GetSpawnData().minRotation;
                 var fractionOfDifference = fraction * difference;
                 rotations[i] = fractionOfDifference + GetSpawnData().minRotation; // We add minRotation to undo Difference
-            }else{
+                
+            }
+            else{
                 rotations[i]=90;
             }
             
@@ -76,18 +81,21 @@ public class BulletSpawner : MonoBehaviour
     }
     public GameObject[] SpawnBullets()
     {
+        
         if (GetSpawnData().isRandom)
         {
             // This is in Update because we want a random rotation for each bullet each time
             RandomRotations();
         }else{
 			DistributedRotations();
-		}
+            
+        }
 		
         // Spawn Bullets
         GameObject[] spawnedBullets = new GameObject[GetSpawnData().numberOfBullets];
         for (int i = 0; i < GetSpawnData().numberOfBullets; i++)
         {
+            
             spawnedBullets[i] = Instantiate(GetSpawnData().bulletResource,panel);
             spawnedBullets[i].transform.position = enemigo.transform.position;
             var b= spawnedBullets[i].GetComponent<Bullet>();

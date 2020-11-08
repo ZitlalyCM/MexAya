@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletResource: {fileID: 2740210003561211959, guid: d47ded3c23e3711489f6672979d845a4,
     type: 3}
-  minRotation: 30
-  maxRotation: 120
-  numberOfBullets: 3
-  isRandom: 0
-  cooldown: 0.3
+  minRotation: 0
+  maxRotation: 40
+  numberOfBullets: 2
+  isRandom: 1
+  cooldown: 0.5
   bulletSpeed: 4
-  lifeTime: 3
+  lifeTime: 6
   spiral: 0
   angle: 0
   bulletVelocity: {x: -1, y: 0}

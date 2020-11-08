@@ -560,7 +560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.1600037, y: 0.6399994}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611758260
@@ -578,9 +578,9 @@ MonoBehaviour:
   spawnDatas:
   - {fileID: 11400000, guid: de40ee6697eae41439699667b363913d, type: 2}
   - {fileID: 11400000, guid: ddfb6215873ba044d930837cc715d5ba, type: 2}
-  enemigo: {fileID: 1595752567}
+  enemigo: {fileID: 611758258}
   panel: {fileID: 1510316629}
-  isSequenceRandom: 0
+  isSequenceRandom: 1
 --- !u!1 &613635541
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +827,7 @@ RectTransform:
   m_GameObject: {fileID: 762505413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 15, y: 15, z: 1}
   m_Children:
   - {fileID: 524040362}
   m_Father: {fileID: 1962170307}
@@ -835,7 +835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -419, y: -106}
+  m_AnchoredPosition: {x: -419, y: -92.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5000001}
 --- !u!212 &762505415
@@ -914,7 +914,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000013113022, y: -0.019734383}
+  m_Offset: {x: 0.11998999, y: -0.059731364}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -925,7 +925,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0280979, y: 4.962121}
+  m_Size: {x: 1.6148677, y: 5.042115}
   m_EdgeRadius: 0
 --- !u!50 &762505418
 Rigidbody2D:
@@ -1176,13 +1176,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078180979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.71456665, w: 0.6995674}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1005746966}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.215004}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1556,7 +1556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.32000732, y: 1.1499939}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383843952
@@ -1574,9 +1574,9 @@ MonoBehaviour:
   spawnDatas:
   - {fileID: 11400000, guid: de40ee6697eae41439699667b363913d, type: 2}
   - {fileID: 11400000, guid: 1a0b9cf0ec4aa5e459707e5ded7916d8, type: 2}
-  enemigo: {fileID: 1529686575}
+  enemigo: {fileID: 1383843950}
   panel: {fileID: 1078180980}
-  isSequenceRandom: 0
+  isSequenceRandom: 1
 --- !u!1 &1446253176
 GameObject:
   m_ObjectHideFlags: 0

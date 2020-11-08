@@ -15,9 +15,10 @@ public class Bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//if(transform.position.y > 5f || transform.position.y < -5f || transform.position.x > 8f|| transform.position.x < -8f){
-		//	Destroy(gameObject);
-		//}
-		transform.Translate(velocity*speed*Time.deltaTime);
+        if (transform.position.y > 1.7f || transform.position.y < -1.8f || transform.position.x > 9f || transform.position.x < -9f)
+        {
+            Destroy(gameObject);
+        }
+        transform.Translate(velocity*speed*Time.deltaTime);
 	}
 }

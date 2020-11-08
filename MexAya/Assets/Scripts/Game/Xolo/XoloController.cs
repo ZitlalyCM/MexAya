@@ -14,7 +14,7 @@ public class XoloController : MonoBehaviour
     float nuevaX;
     private Vector3 startPos;
     private Vector3 endPos;
-    private float lerpTime = 5;
+    private float lerpTime = 2;
     private float currentLerpTime = 0;
 
     public int startHp = 15;
@@ -75,7 +75,7 @@ public class XoloController : MonoBehaviour
         if (timeToFinish < 0)
         {
             isMoving = true;
-            nuevaX = Random.Range(-7.0f, 4.0f);
+            nuevaX = Random.Range(-7.0f, 0.0f);
 
             startPos = transform.position;
             endPos = new Vector3(nuevaX, transform.position.y);
