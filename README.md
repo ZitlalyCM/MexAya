@@ -12,7 +12,7 @@ Pregúntale a MexAya-Bot y ten conversaciones tanto divertidas como eriquecedora
 ## Videojuego con Unity 3D
 Para atravesar el inframundo necesitas de la compañía de Xolo para cruzar, sin embargo, debes usar tu escudo para defenderte a ti y a Xolo de los obstáculos. ¡La durabilidad del escudo se debilita con cada ataque que defiendes! Pero puedes recuperarla recogiendo las flores de Cempaxúchitl en el camino. Puedes resistir hasta que la cuenta atrás termine?
 ![imagen1](./Imagenes/UnityGame_01.jpg)
-![imagen2](./imagenes/UnityGame_02.jpg)
+![imagen2](./Imagenes/UnityGame_02.jpg)
 
 ## Videojuego con P5 y Machine Learning para comandos de voz
 Juego 2D programado con JS además haciendo uso de las librerías de Machine Learning para acciones con comandos de Voz.
